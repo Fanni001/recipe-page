@@ -1,0 +1,209 @@
+
+/* RECIPE SEARCH PAGE */
+
+.recipe_search {
+    width: var(--width-12col);
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 200px 20px 80px;
+    box-sizing: border-box;
+}
+
+/* SEARCH SECTION */
+
+.search_section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+/* FULL SEARCH */
+
+.full_search h2 {
+    color: var(--background-color-light);
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.search_box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid var(--background-color-light);
+    border-radius: 4px;
+    padding: 12px 15px;
+}
+
+.search_box svg {
+    color: var(--background-color-light);
+    width: 18px;
+    height: 18px;
+}
+
+.search_box input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    width: 100%;
+}
+
+.full_search p {
+    color: var(--background-color-light);
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+/* CATEGORY FILTER */
+
+.search_filter {
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.search_filter h2 {
+    color: var(--background-color-light);
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.filter_categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.filter_column {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.filter_column label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--background-color-light);
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.filter_column input {
+    accent-color: var(--primary-color);
+    width: 18px;
+    height: 18px;
+}
+
+/* SEARCH RESULTS */
+
+.search_results {
+    margin-top: 50px;
+    border-top: 1px solid var(--color-dark);
+    padding: 40px 60px;
+}
+
+.search_result {
+    padding-bottom: 35px;
+    margin-bottom: 35px;
+    border-bottom: 1px solid var(--color-dark);
+}
+
+.result_category {
+    color: var(--background-color-light);
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* CATEGORY COLORS */
+
+.seafood {
+    color: var(--category-seafood);
+    font-weight: bold;
+}
+
+.result_category:has(.seafood)::before {
+    background-color: var(--category-seafood);
+}
+.chicken {
+    color: var(--category-chicken);
+    font-weight: bold;
+}
+
+.result_category:has(.chicken)::before {
+    background-color: var(--category-chicken);
+}
+
+.meats {
+    color: var(--category-meats);
+    font-weight: bold;
+}
+
+.result_category:has(.meats)::before {
+    background-color: var(--category-meats);
+}
+
+.snacks {
+    color: var(--category-misc);
+    font-weight: bold;
+}
+
+.result_category:has(.snacks)::before {
+    background-color: var(--category-misc);
+}
+
+.pasta {
+    color: var(--category-pasta);
+    font-weight: bold;
+}
+
+.result_category:has(.pasta)::before {
+    background-color: var(--category-pasta);
+}
+
+.vegetarian {
+    color: var(--category-veg);
+    font-weight: bold;
+}
+
+.result_category:has(.vegetarian)::before {
+    background-color: var(--category-veg);
+}
+
+.dessert {
+    color: var(--category-dessert);
+    font-weight: bold;
+}
+
+.result_category:has(.dessert)::before {
+    background-color: var(--category-dessert);
+}
+
+.result_category {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.result_category::before {
+    content: "";
+    width: 3px;
+    height: 12px;
+    flex-shrink: 0;
+    margin-right: 3px;
+}
+
+.search_result h2 {
+    color: var(--primary-color);
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.result_description {
+    color: var(--background-color-light);
+    font-size: 14px;
+    line-height: 1.5;
+}

@@ -1,0 +1,251 @@
+
+/* Sweet potato hero */
+
+.sweet_hero {
+    width: 100%;
+    height: 650px;
+    margin: 0;
+    background-image: url("https://picsum.photos/1200/650");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-bottom: 1px solid #dedede;
+}
+
+.sweet_hero_content {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: flex-end;
+    padding: 40px 0;
+}
+
+.sweet_hero_text h1 {
+    color: var(--primary-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.sweet_hero_text h2 {
+    color: var(--color-white);
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* Recipe */
+
+.recipe_info {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 100px;
+    border-bottom: 1px solid #dedede;
+}
+
+.recipe_info_item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.recipe_info_item svg {
+    width: 28px;
+    height: 28px;
+    color: var(--primary-color);
+}
+
+.recipe_info_item p {
+    color: var(--color-white);
+    font-size: 16px;
+}
+
+/* Vegetarian button */
+
+.sweet_vegetarian {
+    display: inline-block;
+    margin-top: 35px;
+    padding: 15px 45px;
+    border: 2px solid white;
+    border-radius: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Recipe description */
+
+.recipe_description {
+    max-width: 1200px;
+    margin: 20px auto 0;
+    text-align: left;
+}
+
+.recipe_description p {
+    color: var(--color-white);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+/* Ingredients section */
+
+.sweet_ingredients {
+    max-width: 1200px;
+    margin: 20px auto 0;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 20px;
+}
+
+.sweet_ingredients h2 {
+    color: var(--primary-color);
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.sweet_ingredients_columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: start;
+}
+
+.sweet_ingredients_list h3 {
+    color: var(--color-white);
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+/* ingredients list */
+
+.sweet_ingredients_list p {
+    color: var(--color-white);
+    font-size: 16px;
+    margin-bottom: 4px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.sweet_ingredients_list p::before {
+    content: "•";
+    position: absolute;
+    left: 8px;
+}
+
+/* Cooking instructions */
+
+.sweet_cooking {
+    max-width: 1200px;
+    margin: 20px auto 0;
+    border-bottom: 1px solid #dedede;
+    padding-bottom: 20px;
+}
+
+.sweet_cooking h2 {
+    color: var(--primary-color);
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.sweet_cooking_steps {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sweet_step {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.sweet_step h4 {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.sweet_cooking h3 {
+    color: var(--color-white);
+    font-size: 24px;
+    margin-bottom: 35px;
+}
+
+.sweet_step p {
+    color: var(--color-white);
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* recipe variations */
+
+.sweet_variations {
+    max-width: 1200px;
+    margin: 20px auto 80px;
+}
+
+.sweet_variations h2 {
+    color: var(--primary-color);
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.sweet_variation_cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.sweet_variation_card {
+    background-color: #373737;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.sweet_variation_card h3 {
+    color: var(--color-white);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.sweet_variation_card p {
+    color: var(--background-color-light);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Explore more recipes */
+
+.sweet_explore {
+    max-width: 1200px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+.sweet_explore h2 {
+    color: var(--primary-color);
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.sweet_explore_button {
+    display: inline-block;
+    padding: 15px 40px;
+    border: 2px solid #dedede;
+    border-radius: 12px;
+    color: var(--color-white);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sweet_explore_button:hover {
+    background-color: var(--primary-color);
+}
